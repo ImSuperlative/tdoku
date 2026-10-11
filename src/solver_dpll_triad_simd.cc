@@ -1,5 +1,9 @@
 #include "bitutil.h"
+#ifdef TDOKU_NEON
+#include "simd_vectors_neon.h"
+#else
 #include "simd_vectors.h"
+#endif
 #include "util.h"
 
 #include <array>
